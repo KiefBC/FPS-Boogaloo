@@ -1264,6 +1264,9 @@ GameObject:
   m_Component:
   - component: {fileID: 6754544285381306968}
   - component: {fileID: 6236222146383489077}
+  - component: {fileID: 2446055053494493285}
+  - component: {fileID: 4725397498806465313}
+  - component: {fileID: 1923835989279037464}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Untagged
@@ -1314,6 +1317,55 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!136 &2446055053494493285
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3422326995813689179}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.3
+  m_Height: 2
+  m_Direction: 1
+  m_Center: {x: 0, y: 1, z: 0}
+--- !u!114 &4725397498806465313
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3422326995813689179}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4cc869e974f8364ea48061970c352a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1923835989279037464
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3422326995813689179}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f83a66be0abaf224f920140fb48658ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  laserbeamPrefab: {fileID: 4575945635385861004, guid: ea38b13c31eb9cc418e695b0efcf14b5, type: 3}
+  fireRate: 2
 --- !u!1 &3561634479301751349
 GameObject:
   m_ObjectHideFlags: 0

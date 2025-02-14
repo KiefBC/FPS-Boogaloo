@@ -21,7 +21,7 @@ public class FPSInput : MonoBehaviour
         float deltaX = Input.GetAxis("Horizontal");
         float deltaZ = Input.GetAxis("Vertical");
         Vector3 movement = new Vector3(deltaX, 0, deltaZ);
-        movement = Vector3.ClampMagnitude(movement, 1);
+        movement = Vector3.ClampMagnitude(movement, 1f);
         movement *= speed;
 
         // Handle jumping

@@ -5,8 +5,8 @@ public class SceneController : MonoBehaviour
     [SerializeField] private GameObject enemyPrefab;
     private GameObject[] enemies;
     private Vector3 spawnPoint = new(0, 0, 5);
-    private int minEnemies = 3;
-    private int maxEnemies = 5;
+    private int minEnemies = 5;
+    private int maxEnemies = 10;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()

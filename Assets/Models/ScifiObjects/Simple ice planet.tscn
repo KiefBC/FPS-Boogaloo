@@ -1,0 +1,12 @@
+[gd_scene load_steps=4 format=3 uid="uid://ckqq7x1gurekt"]
+
+[ext_resource type="PackedScene" uid="uid://d24dsltlj0iam" path="res://ScifiObjects/ ice planet/Simple ice planet.fbx" id="1_eqbuf"]
+[ext_resource type="Texture2D" uid="uid://bjswgw88gbhhm" path="res://ScifiObjects/ ice planet/Simple ice planet_albedo.png" id="2_r7eo4"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_785gh"]
+albedo_texture = ExtResource("2_r7eo4")
+
+[node name="Simple ice planet" instance=ExtResource("1_eqbuf")]
+
+[node name="Simple_planet_with_rings" parent="." index="0"]
+surface_material_override/0 = SubResource("StandardMaterial3D_785gh")
